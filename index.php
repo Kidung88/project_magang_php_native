@@ -16,11 +16,11 @@
   </head>
   <body>
     <section class="material-half-bg">
-      <div class="cover"></div>
+      <div class="cover" style="background-color:red;"></div>
     </section>
     <section class="login-content">
       <div class="logo">
-        <h1>Dokumen Internal Pusinfolahta tni</h1>
+        <h1 style="font-family: Lato;font-size:28pt;">Dokumen Internal PUSINFOLAHTA TNI</h1>
       </div>
       <div class="login-box">
         <form class="login-form" action="auth.php" method="post">
@@ -34,7 +34,7 @@
             <input class="form-control" type="password" name="password" placeholder="Password" required>
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block" name="login">Login <i class="fa fa-sign-in fa-lg"></i></button><br>
+            <button class="btn btn-primary btn-block" style="background-color:red;" name="login">Login <i class="fa fa-sign-in fa-lg"></i></button><br>
             <p style="font-size:10pt"><center>Copyright 2021 - PUSINFOLAHTA TNI</center></p>
           </div>
         </form>

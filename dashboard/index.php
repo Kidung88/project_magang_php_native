@@ -30,8 +30,9 @@ $data = mysql_fetch_array($query);
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
-      <header class="main-header hidden-print"><a class="logo" href="index.php" style="font-size:13pt">Pusinfolahta tni</a>
-        <nav class="navbar navbar-static-top">
+      <header class="main-header hidden-print">
+        <a class="logo" href="index.php" style="background-color:red;font-family: Lato;font-size:13pt;">PUSINFOLAHTA TNI</a>
+        <nav class="navbar navbar-static-top" style="background-color:red;">
           <a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <div class="navbar-custom-menu">
             <ul class="top-nav">
@@ -88,7 +89,7 @@ $data = mysql_fetch_array($query);
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="#">Dashboard</a></li>
+              <li><a href="#" style="color:red;">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -98,7 +99,7 @@ $data = mysql_fetch_array($query);
                       <div class="card-body">
                         <div class="row">
                   <div class="col-md-4">
-                    <div class="widget-small primary"><i class="icon fa fa-users fa-3x"></i>
+                    <div class="widget-small primary" style="background-color:red;"><i class="icon fa fa-users fa-3x"></i>
                       <?php
       								$query = mysql_query("SELECT count(*) totaluser FROM users");
       								$datauser = mysql_fetch_array($query);
@@ -140,7 +141,7 @@ $data = mysql_fetch_array($query);
         </div>
         <div class="row" >
           <div class="col-md-12" >
-          <div class="card" style="background-color: #e67e22;">
+          <div class="card" style="">
             <div class="card-body">
           <center><img src="../assets/images/logo-tnimercu.png" alt="" class="img-responsive"></center>
         </div>

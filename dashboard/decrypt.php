@@ -31,8 +31,9 @@ $data = mysql_fetch_array($query);
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
-      <header class="main-header hidden-print"><a class="logo" href="index.php" style="font-size:13pt">Pusinfolahta tni</a>
-        <nav class="navbar navbar-static-top">
+      <header class="main-header hidden-print">
+      <a class="logo" href="index.php" style="background-color:red;font-family: Lato;font-size:13pt;">PUSINFOLAHTA TNI</a>
+        <nav class="navbar navbar-static-top"  style="background-color:red;">
           <a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <div class="navbar-custom-menu">
             <ul class="top-nav">
@@ -77,7 +78,7 @@ $data = mysql_fetch_array($query);
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="index.php">Dashboard</a></li>
+              <li><a href="index.php"  style="color:red;">Dashboard</a></li>
               <li>Dekripsi File</li>
             </ul>
           </div>

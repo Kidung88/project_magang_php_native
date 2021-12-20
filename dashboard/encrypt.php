@@ -30,8 +30,9 @@ $data = mysql_fetch_array($query);
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
-      <header class="main-header hidden-print"><a class="logo" href="index.php" style="font-size:13pt">Pusinfolahta tni</a>
-        <nav class="navbar navbar-static-top">
+      <header class="main-header hidden-print">
+      <a class="logo" href="index.php" style="background-color:red;font-family: Lato;font-size:13pt;">PUSINFOLAHTA TNI</a>
+        <nav class="navbar navbar-static-top"  style="background-color:red;">
           <a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <div class="navbar-custom-menu">
             <ul class="top-nav">
@@ -76,7 +77,7 @@ $data = mysql_fetch_array($query);
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="index.php">Dashboard</a></li>
+              <li><a href="index.php"  style="color:red;">Dashboard</a></li>
               <li>Form Enkripsi</li>
             </ul>
           </div>
@@ -90,25 +91,25 @@ $data = mysql_fetch_array($query);
                         <legend>Form Enkripsi</legend>
                         <div class="form-group">
                           <label class="col-lg-2 control-label" for="inputPassword">Tanggal</label>
-                          <div class="col-lg-4">
+                          <div class="col-lg-10">
                             <input class="form-control" id="inputTgl" type="text" placeholder="Tanggal" name="datenow" value="<?php echo date("Y-m-d");?>" readonly>
                           </div>
                         </div>
                         <div class="form-group">
                           <label class="col-lg-2 control-label" for="inputFile">File</label>
-                          <div class="col-lg-4">
+                          <div class="col-lg-10">
                             <input class="form-control" id="inputFile" placeholder="Input File" type="file" name="file" required>
                           </div>
                         </div>
                         <div class="form-group">
                           <label class="col-lg-2 control-label" for="inputPassword">Password</label>
-                          <div class="col-lg-4">
+                          <div class="col-lg-10">
                             <input class="form-control" id="inputPassword" type="password" placeholder="Password" name="pwdfile" required>
                           </div>
                         </div>
                         <div class="form-group">
                           <label class="col-lg-2 control-label" for="textArea">Deskripsi</label>
-                          <div class="col-lg-4">
+                          <div class="col-lg-10">
                             <textarea class="form-control" id="textArea" rows="3" name="desc" placeholder="Deskripsi"></textarea>
                           </div>
                         </div>
