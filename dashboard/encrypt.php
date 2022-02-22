@@ -116,7 +116,7 @@ $data = mysql_fetch_array($query);
                         <div class="form-group">
                           <label class="col-lg-2 control-label" for="textArea"></label>
                           <div class="col-lg-2">
-                            <input type="submit" name="encrypt_now" value="Enkripsi File" class="form-control btn btn-primary">
+                            <input type="submit" name="encrypt_now" value="Enkripsi File" style="background-color:red;" class="form-control btn btn-primary">
                           </div>
                         </div>
                       </fieldset>

@@ -31,8 +31,9 @@ $data = mysql_fetch_array($query);
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
-      <header class="main-header hidden-print"><a class="logo" href="index.php" style="font-size:13pt">PUSINFOLAHTA TNI</a>
-        <nav class="navbar navbar-static-top">
+      <header class="main-header hidden-print">
+        <a class="logo" href="index.php" style="background-color:red;font-family: Lato;font-size:13pt;">PUSINFOLAHTA TNI</a>
+        <nav class="navbar navbar-static-top" style="background-color:red;">
           <a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <div class="navbar-custom-menu">
             <ul class="top-nav">
@@ -77,7 +78,7 @@ $data = mysql_fetch_array($query);
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="index.php">Dashboard</a></li>
+              <li><a href="index.php" style="color:red;">Dashboard</a></li>
               <li>Dekripsi File</li>
             </ul>
           </div>
@@ -91,7 +92,7 @@ $data = mysql_fetch_array($query);
                 $query = mysql_query("SELECT * FROM file WHERE id_file='$id_file'");
                 $data2 = mysql_fetch_array($query);
                 ?>
-                <h3 align="center">Dekripsi File <i style="color:blue"><?php echo $data2['file_name_finish'] ?></i></h3><br>
+                <h3 align="center">Dekripsi File <i style="color:red"><?php echo $data2['file_name_finish'] ?></i></h3><br>
                 <form class="form-horizontal" method="post" action="decrypt-process.php">
                 <div class="table-responsive">
                   <table class="table striped">
@@ -121,13 +122,13 @@ $data = mysql_fetch_array($query);
                          <td><?php echo $data2['keterangan']; ?></td>
                        </tr>
                        <tr>
-                         <td>Masukkan Password Untuk Mendekrip</td>
+                         <td>Masukkan Password Untuk Dekripsi</td>
                          <td></td>
                          <td>
                            <div class="col-md-6">
                             <input type="hidden" name="fileid" value="<?php echo $data2['id_file'];?>">
                            <input class="form-control" id="inputPassword" type="password" placeholder="Password" name="pwdfile" required><br>
-                           <input type="submit" name="decrypt_now" value="Dekripsi File" class="form-control btn btn-primary">
+                           <input type="submit" name="decrypt_now" value="Dekripsi File" style="background-color:red;" class="form-control btn btn-primary">
                          </div>
                        </td>
                        </tr>

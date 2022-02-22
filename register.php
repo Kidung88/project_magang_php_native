@@ -22,20 +22,32 @@
       <div class="logo">
         <h1 style="font-family: Lato;font-size:28pt;">Dokumen Internal PUSINFOLAHTA TNI</h1>
       </div>
-      <div class="login-box">
-        <form class="login-form" action="auth.php" method="post">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Login</h3>
+      <div class="login-box" style="height:650px;">
+        <form class="login-form" action="reg.php" method="post">
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Register</h3>
           <div class="form-group">
             <label class="control-label">Username</label>
             <input class="form-control" type="text" name="username" placeholder="Username" autofocus autocomplete="off" required>
           </div>
           <div class="form-group">
+            <label class="control-label">Full Name</label>
+            <input class="form-control" type="text" name="fullname" placeholder="Fullname" autofocus autocomplete="off" required>
+          </div>
+          <div class="form-group">
             <label class="control-label">Password</label>
             <input class="form-control" type="password" name="password" placeholder="Password" required>
           </div>
+          <div class="form-group">
+            <label class="control-label">Re-Password</label>
+            <input class="form-control" type="password" name="repassword" placeholder="Re-Password" required>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Job Title</label>
+            <input class="form-control" type="text" name="jobtitle" placeholder="JobTitle" autofocus autocomplete="off" required>
+          </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block" style="background-color:red;" name="login">Login <i class="fa fa-sign-in fa-lg"></i></button><br>
-            <a href="register.php" style="color:red"><center>Create Account</center></a>
+            <button class="btn btn-primary btn-block" style="background-color:red;" name="register">Register <i class="fa fa-sign-in fa-lg"></i></button><br>
+            <a href="index.php" style="color:red"><center>Already have an account?</center></a>
             <p style="font-size:10pt"><center>Copyright 2021 - PUSINFOLAHTA TNI</center></p>
           </div>
         </form>

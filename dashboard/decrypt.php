@@ -78,7 +78,7 @@ $data = mysql_fetch_array($query);
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="index.php"  style="color:red;">Dashboard</a></li>
+              <li><a href="index.php" style="color:red;">Dashboard</a></li>
               <li>Dekripsi File</li>
             </ul>
           </div>
@@ -121,7 +121,7 @@ $data = mysql_fetch_array($query);
                               <?php
                               $a = $data['id_file'];
                               if ($data['status'] == 1) {
-                                echo '<a href="decrypt-file.php?id_file='.$a.'" class="btn btn-primary">Dekripsi File</a>';
+                                echo '<a href="decrypt-file.php?id_file='.$a.'" class="btn btn-primary" style="background-color:red;" >Dekripsi File </a>';
                               }elseif ($data['status'] == 2) {
                                 echo '<a href="encrypt.php" class="btn btn-success">Enkripsi File</a>';
                               }else {
